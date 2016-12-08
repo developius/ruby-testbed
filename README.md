@@ -1,24 +1,7 @@
-# README
+# ruby-testbed
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is my ruby testbed for projects and playing around with Ruby on Rails. Lots of the code will likely being testing things out and will therefore be unstable and buggy :D
 
 Things you may want to cover:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+I've built everything using Ruby 2.3.3, all you need to do to run the code is execute `bundle install && rails server`
