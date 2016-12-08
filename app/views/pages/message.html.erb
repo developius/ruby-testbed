@@ -1,0 +1,33 @@
+<div class="container">
+	<div class="col-md-6 col-md-offset-3 text-center">
+		<div class="page-header">
+			<h2>This is the message.html.reb view</h2>
+		</div>
+	</div>
+	<div class="col-md-6 col-md-offset-3">
+		<p>Title: <span style="font-weight: bold;"><%= @title %></span></p>
+		<p>Message: <span style="font-weight: bold;"><%= @message %></span></p>
+		<div class="row">
+			<form>
+				<div class="form-group col-md-6">
+					<input id="title" name="title" type="text" class="form-control" placeholder="Title" />
+				</div>
+				<div class="form-group col-md-6">
+					<input id="message" name="message" type="text" class="form-control" placeholder="Message" />
+				</div>
+				<div class="form-group col-md-12">
+					<button type="submit" class="btn btn-success">Go!</button>
+				</div>
+			</form>
+		</div>
+		<script type="text/javascript">
+			$("form").on("submit", function(e) {
+				e.preventDefault();
+				var title = $("#title").val();
+				var message = $("#message").val();
+				window.location.replace("/message/"+title+"/"+message);
+				return false;
+			});
+		</script>
+	</div>
+</div>
